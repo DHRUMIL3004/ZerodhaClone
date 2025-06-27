@@ -311,6 +311,10 @@ app.post("/newOrder",(req,res)=>{
      res.send("Order Saved");
 })
 
+app.get("/", (req, res) => {
+  res.send("Zerodha Clone Backend is running!");
+});
+
 app.listen(PORT,()=>{
     console.log("App is started");
 });
